@@ -1,5 +1,4 @@
-const hello = require('index')
-
+import hello from './index'
 
 describe("hello world", () => {
   it("doubleNumbers", () => {

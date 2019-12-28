@@ -1,6 +1,6 @@
-# nyc-issue-1249-js
+# nyc-issue-1249-ts
 
-This repo is repro for [istanbuljs/nyc#1249](https://github.com/istanbuljs/nyc/issues/1249), only purely with `jest` and `nyc` with`js`.
+This repo is repro for [istanbuljs/nyc#1249](https://github.com/istanbuljs/nyc/issues/1249), only purely with `jest` and `nyc` with`jest-ts`(for typescript).
 
 ## steps
 
@@ -18,7 +18,7 @@ npm run showReportByNyc
 
 ## expected result
 
-`html` reports by `jest` and `nyc` are both valid and identical. 
+`html` reports by `jest` and `nyc` are both valid and identical.
 Therefore `npm run showReportByJest` and `npm run showReportByNyc` should show the exact same `html` report.
 
 ## real result executed on personal machine
