@@ -1,0 +1,19 @@
+{
+  "name": "nyc-issue-1249",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "jest --coverage",
+    "showReportByJest": "live-server coverage",
+    "generateReportByNyc": "nyc -t coverage report --reporter=html --report-dir nyc-coverage",
+    "showReportByNyc": "live-server nyc-coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "live-server": "^1.2.1",
+    "nyc": "^15.0.0"
+  }
+}
