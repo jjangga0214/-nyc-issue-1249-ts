@@ -1,6 +1,6 @@
 # nyc-issue-1249-js
 
-This repository is reproduction for [istanbuljs/nyc#1249](https://github.com/istanbuljs/nyc/issues/1249), only purely with `jest` and `nyc` with`js`.
+This repo is repro for [istanbuljs/nyc#1249](https://github.com/istanbuljs/nyc/issues/1249), only purely with `jest` and `nyc` with`js`.
 
 ## steps
 
@@ -16,6 +16,11 @@ npm run generateReportByNyc
 npm run showReportByNyc
 ```
 
-## personal result
+## expected result
 
-It has no problem. `html` reports by `jest` and `nyc` are both valid and identical.
+`html` reports by `jest` and `nyc` are both valid and identical. 
+Therefore `npm run showReportByJest` and `npm run showReportByNyc` should show the exact same `html` report.
+
+## real result executed on personal machine
+
+It's same as expected result on ubuntu 19.04, 64 bits, node 12.6.0, npm 6.13.4.
